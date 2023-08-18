@@ -43,3 +43,6 @@ create table pedidos
 
 select * from produtos;
 select * from pedidos;
+
+select p.id_produto, p.nome, p.preco, d.quantidade from produtos as p inner join pedidos as d on
+d.id_produto=p.id_produto where id_pedido=4;
